@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/:shortId",
+      "destination": "https://url-shortener-production-50c2.up.railway.app/:shortId"
+    }
+  ]
+}

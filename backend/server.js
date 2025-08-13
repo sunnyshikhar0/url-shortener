@@ -46,6 +46,9 @@ app.get("/api/urls", getAllStoredUrls);
 // Delete a URL
 app.delete("/api/urls/:id", deleteUrl);
 
+// Catch-all route for short URL redirection
+app.get("/:shortId", redirectShortUrl);
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is listening on PORT: ${PORT}`);
